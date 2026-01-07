@@ -40,11 +40,11 @@ public:
     bool PostLinkOutlining::areSequencesEquivalent(const std::vector<MCInst> &Seq1, 
                                                const std::vector<MCInst> &Seq2,
                                                const BinaryContext &BC);
-    BinaryFunction* PostLinkOutlining::createOutlinedFunction(
+    BinaryFunction* createOutlinedFunction(
     BinaryContext &BC, 
     const std::vector<MCInst> &Seq, 
     unsigned Index);
-    void PostLinkOutlining::replaceSequencesWithCalls(
+    void replaceSequencesWithCalls(
     BinaryContext &BC,
     std::vector<SequenceInstance> &Instances,
     BinaryFunction *OutlinedFunc);
